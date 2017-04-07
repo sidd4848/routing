@@ -1,0 +1,39 @@
+<html>
+<link rel="stylesheet" type="text/css" href="css\index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+<body ng-app="myApp">
+<div class="navbar">
+  <h1>routing testing</h1>
+</div>
+
+<div ng-view class="mains"></div>
+<div class="footer">
+</div>
+<script>
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "main.html",
+    })
+    .when("/form", {
+        templateUrl : "form.htm",
+        controller : "formCtrl"
+    })
+    .when("/submit", {
+        templateUrl : "submit.htm",
+        controller : "submitCtrl"
+    });
+});
+app.controller("formCtrl", function ($scope) {
+
+});
+app.controller("submitCtrl", function ($scope) {
+
+});
+
+</script>
+
+</body>

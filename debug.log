@@ -1,3 +1,6 @@
 [0408/004950.067:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Noflat\settings.dat: Access is denied. (0x5)
 [0408/004950.070:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: The pipe has been ended. (0x6D)
 [0408/004950.072:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Noflat\settings.dat: Access is denied. (0x5)
+[0408/160241.181:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Noflat\settings.dat: Access is denied. (0x5)
+[0408/160241.185:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0408/160241.187:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Noflat\settings.dat: Access is denied. (0x5)

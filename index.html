@@ -5,7 +5,15 @@
 
 <body ng-app="myApp">
 <div class="navbar">
-  <h1>routing testing</h1>
+  <div style="display:inline;"><h1>routing testing</h1></div>
+  <div style="position: relative;
+    top: -41px;">
+    <ul>
+      <li>about us</li>
+      <li>for companies</li>
+      <li>contact us</li>
+    </ul>
+  </div>
 </div>
 
 <div ng-view class="mains"></div>
@@ -20,18 +28,11 @@ app.config(function($routeProvider) {
     })
     .when("/form", {
         templateUrl : "form.htm",
-        controller : "formCtrl"
     })
     .when("/submit", {
         templateUrl : "submit.htm",
-        controller : "submitCtrl"
+
     });
-});
-app.controller("formCtrl", function ($scope) {
-
-});
-app.controller("submitCtrl", function ($scope) {
-
 });
 
 </script>

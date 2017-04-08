@@ -21,6 +21,7 @@ ul li{
 .mains{
   width: 100%;
   height:500px;
+  background-color: #eaebed;
   text-align: center;
 }
 .mains h1{

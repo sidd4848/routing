@@ -2,7 +2,8 @@ body{
   margin: auto;
 }
 .navbar{
-  background-color: white;
+  background-color:#f4f5f7;
+  position: fixed;
   color:grey;
   width: 100%;
   height: 44px;
@@ -14,6 +15,14 @@ body{
 ul li{
   display: inline;
   margin-left: 10px;
+}
+table tr{
+  width:25%;
+  font-size: 17px;
+}
+table tr td ul li{
+  color: white;
+    display:block;
 }
 .navbar div {
   text-align: right;

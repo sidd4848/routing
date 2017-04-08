@@ -9,7 +9,7 @@
   <div style="position: relative;
     top: -41px;">
     <ul>
-      <li>about us</li>
+      <li><a href="#about" style="color:black;">about us</a></li>
       <li>for companies</li>
       <li>contact us</li>
     </ul>
@@ -18,6 +18,7 @@
 
 <div ng-view class="mains"></div>
 <div class="footer">
+
 </div>
 <script>
 var app = angular.module("myApp", ["ngRoute"]);
@@ -29,12 +30,15 @@ app.config(function($routeProvider) {
     .when("/form", {
         templateUrl : "form.htm",
     })
+    .when("/about", {
+        templateUrl : "about.html",
+    })
     .when("/submit", {
         templateUrl : "submit.htm",
 
     });
 });
-
+var star;
 </script>
 
 </body>
